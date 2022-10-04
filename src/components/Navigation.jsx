@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { AiFillHome } from 'react-icons/ai'
+import { BsNewspaper } from 'react-icons/bs'
+import { FaInfoCircle } from 'react-icons/fa'
+import { GiSpellBook } from 'react-icons/gi'
 import { useNavigate } from 'react-router-dom'
 
 
@@ -16,9 +19,9 @@ const Navigation = () => {
             <IconBox>
                 <ul>
                     <li onClick={onClickHandler} ><AiFillHome /> Home</li>
-                    <li><AiFillHome /> News</li>
-                    <li><AiFillHome /> About</li>
-                    <li><AiFillHome /> Manga</li>
+                    <li><BsNewspaper /> News</li>
+                    <li><FaInfoCircle /> About</li>
+                    <li><GiSpellBook /> Manga</li>
                 </ul>
             </IconBox>
         </Navbox>

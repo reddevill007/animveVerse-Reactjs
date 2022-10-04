@@ -8,7 +8,7 @@ const TopAnime = ({ topAnime }) => {
     const search = useContext(SearchContext);
 
     const onClickHandler = () => {
-        fetch(`https://api.jikan.moe/v4/anime/${topAnime.anime_id}`)
+        fetch(`https://api.jikan.moe/v4/anime/${topAnime.mal_id}`)
             .then((res) => res.json()
                 .then((data) => {
                     search.setDetail(data);
@@ -61,7 +61,7 @@ const Head = styled.h1`
         0deg,
         rgba(173, 80, 46, 0.3),
         rgba(173, 80, 46, 0.6)
-      ), url('https://cdnb.artstation.com/p/marketplace/presentation_assets/000/565/291/large/file.jpg');
+      ), url('https://wallpaperaccess.com/full/1097651.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

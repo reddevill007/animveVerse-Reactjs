@@ -1,19 +1,41 @@
 .home__form {
-  border-radius: 5px;
-  padding: 15px;
-  z-index: 1;
-  background-color: #e9e9ee;
+  width: 40vw;
+  margin-top: 30px;
 }
 
 .home__formControl {
-  display: flex !important;
-  flex-direction: row !important;
+  display: flex;
 }
 
 .home__input {
   flex: 1;
+  padding: 15px 15px;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    0deg,
+    rgba(173, 80, 46, 0.3),
+    rgba(173, 80, 46, 0.6)
+  );
+  outline: none;
+  border: 1px solid #fff;
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 100%;
 }
 
-.home__iconbutton {
-  flex: 0;
+button.home__iconButton {
+  padding: 15px 15px;
+  background-image: linear-gradient(
+    0deg,
+    rgba(173, 80, 46, 0.6),
+    rgba(173, 80, 46, 0.6)
+  );
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
 }

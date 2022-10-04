@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { SearchContext } from '../context/search'
-import { Typography, Link, Paper, ImageListItem, Grid } from '@material-ui/core'
 import './AnimeCard.scss'
 import styled from 'styled-components'
 
@@ -68,7 +67,7 @@ const TopCard = styled.div`
         0deg,
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.1)
-    )
+    );
 `;
 
 const ReviewBox = styled.div`

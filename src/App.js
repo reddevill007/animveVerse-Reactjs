@@ -1,10 +1,11 @@
 import { useState, useContext } from "react";
-import { BrowserRouter, Route, Routes, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Results from "./pages/Results";
 import AnimeDetail from "./pages/AnimeDetail";
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 import { SearchContext } from "./context/search";
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
             <Route path="/anime-detail" element={<AnimeDetail />} />
           </Routes>
         </main>
+        <Footer />
       </BrowserRouter>
     </SearchContext.Provider>
   );
