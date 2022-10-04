@@ -1,0 +1,20 @@
+.blur__box {
+  animation: moveBg 15s linear infinite;
+}
+
+.blur__box img {
+  border-radius: 15px;
+}
+
+@keyframes moveBg {
+  0%,
+  100% {
+    // background-position: top;
+    background-size: 120%;
+  }
+  45%,
+  55% {
+    // background-position: bottom;
+    background-size: 250%;
+  }
+}
