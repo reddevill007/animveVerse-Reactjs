@@ -8,5 +8,13 @@
 }
 
 body {
-  background-color: #121a28;
+  // background-color: #121a28;
+  // background-color: #673d4d;
+  background: radial-gradient(
+    circle,
+    rgba(17, 13, 14, 1) 4%,
+    rgba(103, 61, 77, 1) 68%,
+    rgba(17, 13, 14, 1) 95%
+  );
+  overflow-x: hidden;
 }

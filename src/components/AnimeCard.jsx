@@ -29,7 +29,7 @@ const AnimeCard = (props) => {
             <TopCard >
                 <ReviewBox>
                     <img src={imageUrl} alt={title} />
-                    <p>{score}</p>
+                    <p>&#9733; {score}</p>
                 </ReviewBox>
                 <TopDetail>
                     <h3>{title.length > 20 ? `${title.substring(0, 20)}...` : title}</h3>

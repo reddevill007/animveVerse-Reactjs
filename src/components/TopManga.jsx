@@ -12,7 +12,7 @@ const TopManga = ({ topManga }) => {
                     <TopCard key={manga.mal_id}>
                         <ReviewBox>
                             <img src={manga.images.jpg.image_url} alt="" />
-                            <p>{manga.score}</p>
+                            <p>&#9733; {manga.score}</p>
                         </ReviewBox>
                         <TopDetail>
                             <h3>{manga.title.length > 20 ? `${manga.title.substring(0, 20)}...` : manga.title}</h3>

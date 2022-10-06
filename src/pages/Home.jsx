@@ -37,7 +37,7 @@ const Home = () => {
         const temp = await fetch(
             `https://api.jikan.moe/v4/recommendations/anime`
         ).then((res) => res.json());
-        console.log(temp.data.slice(0, 10));
+        // console.log(temp.data.slice(0, 10));
         setRecommend(temp.data.slice(0, 10));
     };
 

@@ -7,8 +7,8 @@ const TopAnime = ({ topAnime }) => {
     const navigate = useNavigate();
     const search = useContext(SearchContext);
 
-    const onClickHandler = () => {
-        fetch(`https://api.jikan.moe/v4/anime/${topAnime.mal_id}`)
+    const onClickHandler = (id) => {
+        fetch(`https://api.jikan.moe/v4/anime/${id}`)
             .then((res) => res.json()
                 .then((data) => {
                     search.setDetail(data);
@@ -26,12 +26,12 @@ const TopAnime = ({ topAnime }) => {
                     <TopCard key={anime.mal_id}>
                         <ReviewBox>
                             <img src={anime.images.jpg.image_url} alt="" />
-                            <p>{anime.score}</p>
+                            <p>&#9733; {anime.score}</p>
                         </ReviewBox>
                         <TopDetail>
                             <h3>{anime.title.length > 20 ? `${anime.title.substring(0, 20)}...` : anime.title}</h3>
                             <p>{anime.episodes} episodes</p>
-                            <button style={{ marginBottom: 0 }} onClick={onClickHandler}>Learn More</button>
+                            <button style={{ marginBottom: 0 }} onClick={() => { onClickHandler(anime.mal_id) }}>Learn More</button>
                         </TopDetail>
                     </TopCard>
                 ))}

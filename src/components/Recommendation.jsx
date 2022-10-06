@@ -17,7 +17,6 @@ const Recommendation = ({ recommend }) => {
                 }));
     };
 
-    console.log(recommend);
 
     return (
         <div>
