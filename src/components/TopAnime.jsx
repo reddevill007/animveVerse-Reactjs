@@ -31,7 +31,7 @@ const TopAnime = ({ topAnime }) => {
                         <TopDetail>
                             <h3>{anime.title.length > 20 ? `${anime.title.substring(0, 20)}...` : anime.title}</h3>
                             <p>{anime.episodes} episodes</p>
-                            <button style={{ marginBottom: 0 }} onClick={() => { onClickHandler(anime.mal_id) }}>Learn More</button>
+                            <AnimeBtn style={{ marginBottom: 0 }} onClick={() => { onClickHandler(anime.mal_id) }}>Learn More</AnimeBtn>
                         </TopDetail>
                     </TopCard>
                 ))}
@@ -119,6 +119,7 @@ const TopDetail = styled.div`
     flex-direction: column;
     height: 90%;
     justify-content: flex-end;
+    gap: 5px;
 
     h3 {
         font-size: 18px;
@@ -130,3 +131,15 @@ const TopDetail = styled.div`
         color: rgba(25, 118, 210, 0.788);
     }
 `;
+
+const AnimeBtn = styled.button`
+    border-radius: 7px;
+    padding: 7px;
+    color: black;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.1)
+    );
+    border: 2px solid #fff;
+`

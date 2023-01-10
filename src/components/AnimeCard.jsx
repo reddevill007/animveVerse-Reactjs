@@ -34,7 +34,7 @@ const AnimeCard = (props) => {
                 <TopDetail>
                     <h3>{title.length > 20 ? `${title.substring(0, 20)}...` : title}</h3>
                     {/* <p>{manga.chapters ? manga.chapters : '0'} Chapters</p> */}
-                    <button style={{ marginBottom: 0 }} onClick={onClickHandler}>Learn More</button>
+                    <AnimeBtn style={{ marginBottom: 0 }} onClick={onClickHandler}>Learn More</AnimeBtn>
 
                 </TopDetail>
 
@@ -91,6 +91,7 @@ const ReviewBox = styled.div`
         border-top-right-radius: 0px;
         border-bottom-left-radius: 0px;
         padding: 3px;
+    }
 }`;
 
 const TopDetail = styled.div`
@@ -109,3 +110,14 @@ const TopDetail = styled.div`
         color: rgba(25, 118, 210, 0.788);
     }
 `;
+
+const AnimeBtn = styled.button`
+    border-radius: 7px;
+    padding: 7px;
+    color: rgb(138, 124, 124);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.1)
+    );
+`
